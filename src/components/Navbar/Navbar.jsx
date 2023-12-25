@@ -4,7 +4,8 @@ import searchIcon from '../../assets/icons8-search.svg';
 import logo from '../../assets/308627531_462330719255171_5928019227771909430_n.jpg';
 
 const Navbar = () => {
-    const folders = ['Home']
+    const folders = ['Home'];
+
   return (
     <>
         <div className='nav_container'>
@@ -24,9 +25,10 @@ const Navbar = () => {
                 <div className="nav_right">
                     <div className="nav_search">
                         <input type="text" placeholder='search'/>
-                        <button>
+                        {/* <button>
                             <img src={searchIcon} alt="search" />
-                        </button>
+                        </button> */}
+                        <img src={searchIcon} alt="search" />
                     </div>
                 </div>
             </div>

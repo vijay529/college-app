@@ -1,13 +1,16 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar.jsx';
-import Home from './components/Home/Home.jsx'
+import Sidebar from './components/MainDropdown/Sidebar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
+    <Router>
+    <div className='App'>
+      <Navbar/>
+      <Sidebar/>
     </div>
+    </Router>
   );
 }
 
